@@ -1,4 +1,21 @@
 
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+  console.log('Hello');
+}
+
+function showPage() {
+  document.getElementById("spinner").style.display = "none";
+  document.getElementById("main").style.display = "block";
+  console.log('Hai');
+}
+
+
+
+
+
 (function() {
   "use strict";
 
