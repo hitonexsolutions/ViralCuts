@@ -446,14 +446,19 @@ h6 {
   background-color: rgb(255, 206, 12);;
 }
 
-
+.mobile-service-link{
+  display: none;
+}
 
 @media only screen and (max-width: 979px) {
   .ag-format-container {
     display: none;
   }
-  .dropdown i{
+  .dropdown {
     display: none;
+  }
+  .mobile-service-link{
+    display: block;
   }
 }
 
