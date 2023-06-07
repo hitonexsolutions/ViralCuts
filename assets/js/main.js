@@ -1,17 +1,16 @@
 
-var myVar;
 
-function myFunction() {
-  myVar = setTimeout(showPage, 50);
-  console.log('Hello');
-}
-
-function showPage() {
-  document.getElementById("spinner").style.display = "none";
-  document.getElementById("main").style.display = "block";
-  console.log('Hai');
-}
-
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.getElementById("main").style.display = "none";
+        document.getElementById("loader").style.display = "block";
+        console.log('hi');
+    } else {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("main").style.display = "block";
+        console.log('hello');
+    }
+};
 
 
 
