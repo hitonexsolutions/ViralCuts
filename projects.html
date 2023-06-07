@@ -29,402 +29,375 @@
 
 </head>
 
-<body onload="myFunction()">
+<body>
 
 
-  <div id="spinner">
-    <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
-          <stop offset="0%" stop-color="white" />
-          <stop offset="100%" stop-color="rgb(255, 206, 12)" />
-        </linearGradient>
-        <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="white" />
-          <stop offset="100%" stop-color="rgb(255, 206, 12)" />
-        </linearGradient>
-      </defs>
-      <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
-      <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
-    </svg>
-  </div>
-  
+  <div id="loader" class="center"></div>
   <div id="main">
     
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center header">
-    <div class="container d-flex justify-content-between align-items-center">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center header">
+      <div class="container d-flex justify-content-between align-items-center">
 
-      <div class="logo">
-        <h1><a href="index.html">Virul Cuts</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
+        <div class="logo">
+          <h1><a href="index.html">Virul Cuts</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="active" href="projects.html">Projects</a></li>
-          <li class="mobile-service-link"><a href="services.html">Services</a></li>
-          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down mt-2"></i></a>
-            <div class="dropdown-content ">
-              <div class="ag-format-container ">
-                <div class="row">
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li class="mobile-service-link"><a href="services.html">Services</a></li>
+            <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down mt-2"></i></a>
+              <div class="dropdown-content ">
+                <div class="ag-format-container ">
+                  <div class="row">
+                    
+                    <div class="services-dropdown col-lg-4">
+                      <h1>Discover our comprehensive portfolio of end-to-end services.</h1>
+                    </div>
+        
+                    <div class="ag-courses_box col-lg-8">
+                      <div class="ag-courses_item">
+                        <a href="services.html#Digital-Marketing" class="ag-courses-item_link">
+                          <div class="ag-courses-item_bg"></div>
                   
-                  <div class="services-dropdown col-lg-4">
-                    <h1>Discover our comprehensive portfolio of end-to-end services.</h1>
-                  </div>
-      
-                  <div class="ag-courses_box col-lg-8">
-                    <div class="ag-courses_item">
-                      <a href="services.html#Digital-Marketing" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-                
-                        <div class="ag-courses-item_title">
-                          Digital Marketing
-                        </div>
-                
-                      </a>
+                          <div class="ag-courses-item_title">
+                            Digital Marketing
+                          </div>
+                  
+                        </a>
+                      </div>
+                  
+                      <div class="ag-courses_item">
+                        <a href="services.html#Food-Photography" class="ag-courses-item_link">
+                          <div class="ag-courses-item_bg"></div>
+                  
+                          <div class="ag-courses-item_title">
+                            Food Photography
+                          </div>
+                  
+                          
+                        </a>
+                      </div>
+                  
+                      <div class="ag-courses_item">
+                        <a href="services.html#Company-Profile" class="ag-courses-item_link">
+                          <div class="ag-courses-item_bg"></div>
+                  
+                          <div class="ag-courses-item_title">
+                            Company Profile
+                          </div>
+                  
+                          
+                        </a>
+                      </div>
+                  
+                      <div class="ag-courses_item">
+                        <a href="services.html#Outdoor-Photography-Services" class="ag-courses-item_link">
+                          <div class="ag-courses-item_bg"></div>
+                  
+                          <div class="ag-courses-item_title">
+                            Outdoor Photography Services
+                          </div>
+                  
+                          
+                        </a>
+                      </div>
+                  
+                      <div class="ag-courses_item">
+                        <a href="services.html#business-Card" class="ag-courses-item_link">
+                          <div class="ag-courses-item_bg"></div>
+                  
+                          <div class="ag-courses-item_title">
+                            business Card
+                          </div>
+                  
+                        </a>
+                      </div>
+                  
+                      <div class="ag-courses_item">
+                        <a href="services.html#T-Shirt-Printing" class="ag-courses-item_link">
+                          <div class="ag-courses-item_bg"></div>
+                  
+                          <div class="ag-courses-item_title">
+                            T-Shirt Printing
+                          </div>
+                        </a>
+                      </div>
+                  
                     </div>
-                
-                    <div class="ag-courses_item">
-                      <a href="services.html#Food-Photography" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-                
-                        <div class="ag-courses-item_title">
-                          Food Photography
-                        </div>
-                
-                        
-                      </a>
-                    </div>
-                
-                    <div class="ag-courses_item">
-                      <a href="services.html#Company-Profile" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-                
-                        <div class="ag-courses-item_title">
-                          Company Profile
-                        </div>
-                
-                        
-                      </a>
-                    </div>
-                
-                    <div class="ag-courses_item">
-                      <a href="services.html#Outdoor-Photography-Services" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-                
-                        <div class="ag-courses-item_title">
-                          Outdoor Photography Services
-                        </div>
-                
-                        
-                      </a>
-                    </div>
-                
-                    <div class="ag-courses_item">
-                      <a href="services.html#business-Card" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-                
-                        <div class="ag-courses-item_title">
-                          business Card
-                        </div>
-                
-                      </a>
-                    </div>
-                
-                    <div class="ag-courses_item">
-                      <a href="services.html#T-Shirt-Printing" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-                
-                        <div class="ag-courses-item_title">
-                          T-Shirt Printing
-                        </div>
-                      </a>
-                    </div>
-                
                   </div>
                 </div>
               </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div>
+    </header><!-- End Header -->
+
+
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Projects</li>
+          </ol>
+          <h2>Projects</h2>
+
+        </div>
+      </section><!-- End Breadcrumbs -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-Food-Photography">Food Photography</li>
+                <li data-filter=".filter-Menu-Printing">Menu Printing</li>
+                <li data-filter=".filter-Brochure-Design">Brochure Design</li>
+              </ul>
             </div>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+          </div>
 
-    </div>
-  </header><!-- End Header -->
+          <div class="row portfolio-container">
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Food-Photography">
+              <div class="portfolio-wrap">
+                <a href="assets/img/projects/product-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food Photography">
+                <img src="assets/img/projects/product-1.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Food Photography</h4>
+                    
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Menu-Printing">
+              <div class="portfolio-wrap">
+                <a href="assets/img/projects/product-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Menu Printing">
+                <img src="assets/img/projects/product-4.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Menu Printing</h4>
+                    
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Food-Photography">
+              <div class="portfolio-wrap">
+                <a href="assets/img/projects/product-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food Photography">
+                <img src="assets/img/projects/product-2.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Food Photography</h4>
+                    
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Menu-Printing">
+              <div class="portfolio-wrap">
+                <a href="assets/img/projects/product-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Menu Printing">
+                <img src="assets/img/projects/product-9.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Menu Printing</h4>
+                    
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Menu-Printing">
+              <div class="portfolio-wrap">
+                <a href="assets/img/projects/product-6.avif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Menu Printing">
+                <img src="assets/img/projects/product-6.avif" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Menu Printing</h4>
+                    
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Brochure-Design">
+              <div class="portfolio-wrap">
+                <a href="assets/img/projects/product-8.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Brochure Design">
+                <img src="assets/img/projects/product-8.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Brochure Design</h4>
+                    
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Food-Photography">
+              <div class="portfolio-wrap">
+                <a href="assets/img/projects/product-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food Photography">
+                <img src="assets/img/projects/product-3.jpg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Food Photography</h4>
+                    
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Brochure-Design">
+              <div class="portfolio-wrap">
+                <a href="assets/img/projects/product-7.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Brochure Design">
+                <img src="assets/img/projects/product-7.webp" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>Brochure Design</h4>
+                    
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            
+
+          </div>
+
+        </div>
+      </section><!-- End Portfolio Section -->
+
+      <!-- ======= Clients Section ======= -->
+      <!-- <section id="clients" class="clients">
+        <div class="container">
+
+          <div class="section-title">
+            <h2>Clients</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
+
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </section> -->
+      <!-- End Clients Section -->
 
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>Our Newsletter</h4>
+              <p>Stay in the loop with our newsletter for the latest culinary news, exclusive offers, and mouthwatering updates from our cafe and restaurant community.</p>
+            </div>
+            <div class="col-lg-6">
+              <form action="" method="post">
+                <input type="email" placeholder="Enter Your Email" name="email"><input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="services.html#Food-Photography">Food Photography</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="services.html#Menu-Printing">Menu Printing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="services.html#Brochure-Design">Brochure Design</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="services.html#Social-Media-Marketing">Social Media Marketing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="services.html#Flyer-Distribution">Flyer Distribution</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="services.html#T-Shirt-Printing">T-Shirt Printing</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                Firj Murar, Deira,<br> Dubai-UAE <br><br>
+                <strong>Phone:</strong> +971 52 117 2868<br>
+                <strong>Email:</strong> info@muratalmadeena.com<br>
+              </p>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-info">
+              <h3>About Viral Cuts</h3>
+              <p>We are dedicated to providing exceptional cafe and restaurant marketing services that help elevate your brand, engage customers, and drive business growth.</p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       <div class="container">
-
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Projects</li>
-        </ol>
-        <h2>Projects</h2>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-Food-Photography">Food Photography</li>
-              <li data-filter=".filter-Menu-Printing">Menu Printing</li>
-              <li data-filter=".filter-Brochure-Design">Brochure Design</li>
-            </ul>
-          </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>Viral Cuts</span></strong>. All Rights Reserved
         </div>
-
-        <div class="row portfolio-container">
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Food-Photography">
-            <div class="portfolio-wrap">
-              <a href="assets/img/projects/product-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food Photography">
-              <img src="assets/img/projects/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Food Photography</h4>
-                  
-                </div>
-              </a>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Menu-Printing">
-            <div class="portfolio-wrap">
-              <a href="assets/img/projects/product-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Menu Printing">
-              <img src="assets/img/projects/product-4.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Menu Printing</h4>
-                  
-                </div>
-              </a>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Food-Photography">
-            <div class="portfolio-wrap">
-              <a href="assets/img/projects/product-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food Photography">
-              <img src="assets/img/projects/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Food Photography</h4>
-                  
-                </div>
-              </a>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Menu-Printing">
-            <div class="portfolio-wrap">
-              <a href="assets/img/projects/product-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Menu Printing">
-              <img src="assets/img/projects/product-9.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Menu Printing</h4>
-                  
-                </div>
-              </a>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Menu-Printing">
-            <div class="portfolio-wrap">
-              <a href="assets/img/projects/product-6.avif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Menu Printing">
-              <img src="assets/img/projects/product-6.avif" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Menu Printing</h4>
-                  
-                </div>
-              </a>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Brochure-Design">
-            <div class="portfolio-wrap">
-              <a href="assets/img/projects/product-8.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Brochure Design">
-              <img src="assets/img/projects/product-8.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Brochure Design</h4>
-                  
-                </div>
-              </a>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Food-Photography">
-            <div class="portfolio-wrap">
-              <a href="assets/img/projects/product-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Food Photography">
-              <img src="assets/img/projects/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Food Photography</h4>
-                  
-                </div>
-              </a>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Brochure-Design">
-            <div class="portfolio-wrap">
-              <a href="assets/img/projects/product-7.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Brochure Design">
-              <img src="assets/img/projects/product-7.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Brochure Design</h4>
-                  
-                </div>
-              </a>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Menu-Printing">
-            <div class="portfolio-wrap">
-              <a href="assets/img/projects/product-5.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Menu Printing">
-              <img src="assets/img/projects/product-5.webp" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Menu Printing</h4>
-                  
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Clients</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Clients Section -->
-
-
-   <!-- ======= Footer ======= -->
-   <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Stay in the loop with our newsletter for the latest culinary news, exclusive offers, and mouthwatering updates from our cafe and restaurant community.</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" placeholder="Enter Your Email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
+        <div class="credits">
+          Designed by <a href="https://hitonex.com/">Hitonex</a>
         </div>
       </div>
-    </div>
+    </footer><!-- End Footer -->
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html#Food-Photography">Food Photography</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html#Menu-Printing">Menu Printing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html#Brochure-Design">Brochure Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html#Social-Media-Marketing">Social Media Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html#Flyer-Distribution">Flyer Distribution</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html#T-Shirt-Printing">T-Shirt Printing</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              Firj Murar, Deira,<br> Dubai-UAE <br><br>
-              <strong>Phone:</strong> +971 52 117 2868<br>
-              <strong>Email:</strong> info@muratalmadeena.com<br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Viral Cuts</h3>
-            <p>We are dedicated to providing exceptional cafe and restaurant marketing services that help elevate your brand, engage customers, and drive business growth.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Viral Cuts</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="https://hitonex.com/">Hitonex</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-</div>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
