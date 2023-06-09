@@ -69,7 +69,10 @@ h6 {
 
 
 
-
+#loading-icon, #subscribe-loading-icon{
+  display: none;
+  animation: spin 1.5s linear infinite;
+}
 
 #loader {
   border: 12px solid rgb(255, 206, 12);
@@ -1204,6 +1207,7 @@ section {
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
+  margin-top: 10px;
   padding: 10px 20px 10px 20px;
   font-size: 15px;
   font-weight: 500;
@@ -2272,7 +2276,7 @@ section {
   width: calc(100% - 140px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form button {
   position: absolute;
   top: 0;
   right: 0;
