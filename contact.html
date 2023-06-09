@@ -195,27 +195,29 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="" id="contact-form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="Name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="Email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" name="Subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="Message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center">
+                  <button type="submit">
+                    <i id="loading-icon" style="margin: 0px 10px;float:left;display: none;" class="bi bi-hourglass"></i>
+                    Send Message
+                </button>
+              </div>
             </form>
           </div>
 
@@ -236,8 +238,8 @@
             <p>Stay in the loop with our newsletter for the latest culinary news, exclusive offers, and mouthwatering updates from our cafe and restaurant community.</p>
           </div>
           <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" placeholder="Enter Your Email" name="email"><input type="submit" value="Subscribe">
+            <form id="subscribe-form" action="">
+              <input type="email" required placeholder="Enter Your Email" name="Email"><button type="submit"><i id="subscribe-loading-icon" style="margin: 0px 10px;float:left;display: none;" class="bi bi-hourglass"></i>Subscribe</button>
             </form>
           </div>
         </div>
@@ -312,12 +314,52 @@
 </div>
 
   <!-- Vendor JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    
+  $("#contact-form").submit((e)=>{
+    e.preventDefault()
+    document.getElementById('loading-icon').style.display="block"
+    $.ajax({
+      url:"https://script.google.com/macros/s/AKfycbw94l58BQKuiZuMjf9ny40DN-fKTwsPT-NX8vWRX7EwhEnK7hvTlK6k0gCuJva2IXSK0g/exec",
+      data:$("#contact-form").serialize(),
+      method:"post",
+      success:function (response){
+        window.location.reload()
+        //window.location.href="https://google.com"
+      },
+      error:function (err){
+        alert("Something Error")
+        window.location.reload()
+      }
+    })
+  })
+    
+  $("#subscribe-form").submit((e)=>{
+    e.preventDefault()
+    document.getElementById('subscribe-loading-icon').style.display="block"
+    $.ajax({
+      url:"https://script.google.com/macros/s/AKfycbzm7-8MMM7PN7wQ1RZQOorrzh6BQn0w0nUE7bWGMppZZVoShhC26ctiNbBnBatWJnti/exec",
+      data:$("#subscribe-form").serialize(),
+      method:"post",
+      success:function (response){
+        window.location.reload()
+        //window.location.href="https://google.com"
+      },
+      error:function (err){
+        alert("Something Error")
+        window.location.reload()
+      }
+    })
+  })
+  </script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

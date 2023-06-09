@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Viral Cuts - Cafe & restaurant Marketing</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Viral Cuts - Cafe &
+     restaurant Marketing in UAE</title>
+  <meta content="Cafe & restaurant Marketing and Studio in UAE" name="description">
+  <meta content="Restaurant cafe marketing uae dubai photography business t-shirt printing press " name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -432,8 +433,8 @@
             <p>Stay in the loop with our newsletter for the latest culinary news, exclusive offers, and mouthwatering updates from our cafe and restaurant community.</p>
           </div>
           <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" placeholder="Enter Your Email" name="email"><input type="submit" value="Subscribe">
+            <form id="subscribe-form" action="">
+              <input type="email" required placeholder="Enter Your Email" name="Email"><button type="submit"><i id="subscribe-loading-icon" style="margin: 0px 10px;float:left;display: none;" class="bi bi-hourglass"></i>Subscribe</button>
             </form>
           </div>
         </div>
@@ -510,12 +511,35 @@
 </div>
 
   <!-- Vendor JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    
+  
+  $("#subscribe-form").submit((e)=>{
+    e.preventDefault()
+    document.getElementById('subscribe-loading-icon').style.display="block"
+    $.ajax({
+      url:"https://script.google.com/macros/s/AKfycbzm7-8MMM7PN7wQ1RZQOorrzh6BQn0w0nUE7bWGMppZZVoShhC26ctiNbBnBatWJnti/exec",
+      data:$("#subscribe-form").serialize(),
+      method:"post",
+      success:function (response){
+        window.location.reload()
+        //window.location.href="https://google.com"
+      },
+      error:function (err){
+        alert("Something Error")
+        window.location.reload()
+      }
+    })
+  })
+  </script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
